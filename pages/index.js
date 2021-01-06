@@ -1,6 +1,7 @@
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient, { gql } from "apollo-boost";
 import { BookInfo } from "../components/BookInfo";
+import { LazyBookInfo } from "../components/LazyBookInfo";
 
 const Home = ({ data }) => {
   const client = new ApolloClient({
@@ -12,6 +13,7 @@ const Home = ({ data }) => {
       <div>
         <h1>NextJS GraphQL Apollo App</h1>
         <BookInfo />
+        <LazyBookInfo />
       </div>
     </ApolloProvider>
   );
