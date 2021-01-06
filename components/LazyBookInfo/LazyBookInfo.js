@@ -10,7 +10,6 @@ const GET_BOOK_DETAILS = gql`
   }
 `;
 
-
 const LazyBookInfo = () => {
   // If loading is false and there is no error, then the Query completed successfully.
   const [getBook, { loading, data, error }] = useLazyQuery(GET_BOOK_DETAILS);
