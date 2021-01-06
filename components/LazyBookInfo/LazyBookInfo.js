@@ -32,7 +32,7 @@ const LazyBookInfo = () => {
       <br /><br />
 
       <button onClick={() => getBook({ variables: { breed: 'bulldog' } })}>
-        Click me! useLazyQuery to fill out fields above on-demand
+        Click to fill out fields above on-demand
       </button>
     </div>
   );

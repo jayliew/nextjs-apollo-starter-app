@@ -11,7 +11,7 @@ const Home = ({ data }) => {
   return (
     <ApolloProvider client={client}>
       <div>
-        <h1>NextJS GraphQL Apollo App</h1>
+        <h1>NextJS GraphQL Apollo App Example</h1>
         <BookInfo />
         <LazyBookInfo />
       </div>

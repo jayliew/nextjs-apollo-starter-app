@@ -69,12 +69,9 @@ const BookInfo = () => {
   return (
     <div>
       <br /><br /><br />
-      <strong>useMutation example</strong>
+      <strong>useQuery and useMutation example</strong>
       <br />
       <br /> 
-      ( data below pre-loaded with useQuery hook )
-      <br />
-      <br />
     
       <em>book name</em>: {data && data.book.name}
       <br /><br />
