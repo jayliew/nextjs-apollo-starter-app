@@ -1,7 +1,8 @@
-## Example modified from
+## This example code was initially started by Ben Grunfeld (subsequently) modified
 
 - https://medium.com/swlh/server-side-graphql-with-apollo-nextjs-part-1-setup-2615410c4966
 - https://medium.com/swlh/full-stack-graphql-with-apollo-nextjs-part-2-1bea637ff007
+- https://github.com/bengrunfeld/nextjs-apollo-app
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
