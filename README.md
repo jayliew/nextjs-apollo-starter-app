@@ -1,3 +1,8 @@
+## Example modified from
+
+- https://medium.com/swlh/server-side-graphql-with-apollo-nextjs-part-1-setup-2615410c4966
+- https://medium.com/swlh/full-stack-graphql-with-apollo-nextjs-part-2-1bea637ff007
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
