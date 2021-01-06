@@ -56,23 +56,31 @@ const BookInfo = () => {
           { loading: mutationLoading, 
             error: mutationError }] = useMutation(SET_BOOK_DETAILS, { update: updateCache });
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
+  if (loading) return <p>Loading (useMutation)...</p>;
+  if (error) return <p>Error (useMutation)</p>;
 
   const updateBookDetails = () => {
-    // added timestamp to show value is changing
+    // added timestamp appended just to show value is changing after each button press
     updateBook({
       variables: { name: ("A Spicy Sausage " + Date.now().toString()) , author: "Anton the Butcher" },
     });
   };
 
-  // @NA look into adding useLazyQuery example
-
   return (
     <div>
-      <p>
-        {data.book.name} - {data.book.author}
-      </p>
+      <br /><br /><br />
+      <strong>useMutation example</strong>
+      <br />
+      <br /> 
+      ( data below pre-loaded with useQuery hook )
+      <br />
+      <br />
+    
+      <em>book name</em>: {data && data.book.name}
+      <br /><br />
+      <em>book author</em>: {data && data.book.author}
+
+      <br /><br />
       <button onClick={updateBookDetails}>Update Book</button>
     </div>
   );
