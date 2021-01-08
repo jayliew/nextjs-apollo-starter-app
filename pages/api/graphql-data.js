@@ -1,4 +1,5 @@
 import { ApolloServer, gql } from "apollo-server-micro";
+const cors = require('micro-cors')();
 
 let book = {
   name: "The Large Hungarian Sausage",
@@ -44,4 +45,6 @@ export const config = {
   },
 };
 
-export default handler;
+// this line below is to allow CORS.
+// If CORS not needed, then just: export default handler
+export default cors((req, res) => req.method === 'OPTIONS' ? res.end() : handler(req, res));
