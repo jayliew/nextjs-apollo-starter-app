@@ -25,7 +25,7 @@ The GraphQL endpoint can be accessed codesandbox.io, but the demo server must be
 
 Demo GraphQL endpoint: https://msv4f.sse.codesandbox.io/api/graphql-data
 
-Example query:
+Quick example query for GraphiQL, which should return valid results:
 ```
 query {
     book {
